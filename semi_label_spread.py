@@ -32,12 +32,12 @@ with open(PARTIAL_LABEL_PATH, 'r', encoding='utf-8') as f:
                 labels_raw.append(-1)
                 paths.append(path)
             else:
-                print("❌ 알 수 없는 라벨:", label_str)
+                print("알 수 없는 라벨:", label_str)
         else:
-            print("❌ 잘못된 줄:", line)
+            print("잘못된 줄:", line)
 
 labels = np.array(labels_raw)
-print(f"🔍 Labeled: {(labels != -1).sum()}, Unlabeled: {(labels == -1).sum()}")
+print(f"Labeled: {(labels != -1).sum()}, Unlabeled: {(labels == -1).sum()}")
 
 # 3. Run Label Spreading
 model = LabelSpreading(kernel='rbf', alpha=0.8, max_iter=1000)
@@ -53,9 +53,7 @@ if os.path.exists(os.path.join(SAVE_DIR, "labels_true.npy")):
     with open(os.path.join(SAVE_DIR, "semi_spread_scores.txt"), 'w') as f:
         f.write(f"ARI: {ari:.4f}\n")
         f.write(f"NMI: {nmi:.4f}\n")
-    print(f"✅ 평가 완료 (ARI: {ari:.4f}, NMI: {nmi:.4f})")
-else:
-    print("⚠️ labels_true.npy가 없어 평가 생략됨.")
+    print(f"평가 완료 (ARI: {ari:.4f}, NMI: {nmi:.4f})")
 
 # 5. 시각화 저장
 pca = PCA(n_components=2)
