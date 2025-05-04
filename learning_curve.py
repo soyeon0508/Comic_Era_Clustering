@@ -37,7 +37,7 @@ with open(score_log_path, 'w') as f_log:
         nmi = normalized_mutual_info_score(labels_true, pred)
         ari_scores.append(ari)
         nmi_scores.append(nmi)
-        print(f"✅ Ratio {ratio:.2f} → ARI: {ari:.4f}, NMI: {nmi:.4f}")
+        print(f"Ratio {ratio:.2f} → ARI: {ari:.4f}, NMI: {nmi:.4f}")
         f_log.write(f"{ratio:.2f}\t{ari:.4f}\t{nmi:.4f}\n")
 
         # 시각화 저장
