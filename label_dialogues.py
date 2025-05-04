@@ -12,7 +12,7 @@ output_file = "labeled_dialogues.txt"
 with open(output_file, 'w', encoding='utf-8') as out_f:
     for filename, label in file_label_map.items():
         if not os.path.exists(filename):
-            print(f"❌ 파일 없음: {filename}")
+            print(f"파일 없음: {filename}")
             continue
 
         with open(filename, 'r', encoding='utf-8') as in_f:
@@ -21,5 +21,5 @@ with open(output_file, 'w', encoding='utf-8') as out_f:
                 if line:
                     out_f.write(f"{label}\t{line}\n")
 
-print(f"✅ 병합 및 라벨링 완료 → {output_file}")
+print(f"병합 및 라벨링 완료 → {output_file}")
 
