@@ -29,5 +29,5 @@ if __name__ == "__main__":
         for line in result:
             f.write(line + '\n')
 
-    print(f"✅ {OUTPUT_PATH} 생성 완료! 총 {len(result)}개 중 {int(len(result) * LABELED_RATIO)}개 라벨 유지됨.")
+    print(f"{OUTPUT_PATH} 생성 완료! 총 {len(result)}개 중 {int(len(result) * LABELED_RATIO)}개 라벨 유지됨.")
 
