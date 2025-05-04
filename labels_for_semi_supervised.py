@@ -3,7 +3,7 @@ import os
 
 INPUT_PATH = "image_label_list.txt"
 OUTPUT_PATH = "image_label_list_partial.txt"
-LABELED_RATIO = 0.1  # 전체 중 몇 %를 라벨링할지
+LABELED_RATIO = 0.1  # 전체 중 10%를 라벨링
 SEED = 42
 
 def split_labeled_unlabeled(filepath, labeled_ratio=0.1, seed=42):
