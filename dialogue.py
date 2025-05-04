@@ -4,7 +4,7 @@ import json
 def extract_dialogues_by_subfolders(root_label_paths):
     for base_path in root_label_paths:
         if not os.path.exists(base_path):
-            print(f"❌ 경로 없음: {base_path}")
+            print(f"경로 없음: {base_path}")
             continue
 
         for subfolder in os.listdir(base_path):
@@ -27,7 +27,7 @@ def extract_dialogues_by_subfolders(root_label_paths):
                             if dialogue:
                                 all_dialogues.append(dialogue)
                 except Exception as e:
-                    print(f"❌ 오류: {fname} → {e}")
+                    print(f"오류: {fname} → {e}")
 
             all_dialogues = sorted(set(all_dialogues))
             output_path = f"{subfolder}_dialogues.txt"
@@ -36,7 +36,7 @@ def extract_dialogues_by_subfolders(root_label_paths):
                 for line in all_dialogues:
                     out.write(line + '\n')
 
-            print(f"✅ {subfolder}: {len(all_dialogues)}개 대사 추출 완료 → {output_path}")
+            print(f"{subfolder}: {len(all_dialogues)}개 대사 추출 완료 → {output_path}")
 
 
 if __name__ == "__main__":
