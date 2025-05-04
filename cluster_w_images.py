@@ -34,7 +34,7 @@ def load_image_label_list(file_path):
 def embed_images(image_paths):
     embeddings, valid_paths = [], []
     with torch.no_grad():
-        for path in tqdm(image_paths, desc="🔄 이미지 임베딩 중", ncols=80):
+        for path in tqdm(image_paths, desc="이미지 임베딩 중", ncols=80):
             try:
                 img = Image.open(path).convert("RGB")
                 img = preprocess(img).unsqueeze(0).to(device)
@@ -85,5 +85,5 @@ if __name__ == "__main__":
     np.save(os.path.join(SAVE_DIR, "labels_true.npy"), np.array(true_labels))
     np.save(os.path.join(SAVE_DIR, "labels_pred.npy"), np.array(pred_labels))
 
-    print("✅ 클러스터링 완료 및 결과 저장!")
+    print("클러스터링 완료 및 결과 저장!")
 
