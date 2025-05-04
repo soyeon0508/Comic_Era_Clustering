@@ -24,5 +24,5 @@ def visualize(data, labels, title, filename, label_name="Label"):
 
 visualize(embeddings, labels_pred, "KMeans Clustering (Image, k=3)", "image_cluster_plot.png", label_name="Cluster")
 visualize(embeddings, labels_true, "True Label Distribution (Image)", "image_true_label_plot.png", label_name="True Label")
-print("✅ 시각화 완료 및 저장!")
+print("시각화 저장완료")
 
