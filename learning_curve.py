@@ -5,7 +5,7 @@ from sklearn.semi_supervised import LabelSpreading
 from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
 from sklearn.decomposition import PCA
 
-SAVE_DIR = "/home/ubuntu/comic_translation/result_v5"
+SAVE_DIR = "/home/ubuntu/comic_translation/result_v4"
 embedding_path = os.path.join(SAVE_DIR, "embeddings.npy")
 label_path = os.path.join(SAVE_DIR, "labels_true.npy")
 
