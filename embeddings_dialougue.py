@@ -1,6 +1,10 @@
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
 from supervised.automl import AutoML
 from sklearn.metrics import accuracy_score, f1_score, adjusted_rand_score, normalized_mutual_info_score
-import matplotlib.pyplot as plt
 
 # 경로 설정
 RESULT_DIR = "/home/ubuntu/comic_translation/result_v1"
