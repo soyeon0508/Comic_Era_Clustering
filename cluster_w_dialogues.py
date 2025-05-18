@@ -69,7 +69,7 @@ plt.savefig(os.path.join(RESULT_DIR, "true_label_plot.png"))
 plt.close()
 print("정답 라벨 시각화 저장 완료")
 
-# 📂 클러스터별 문장 30개씩 저장
+# 클러스터별 문장 30개씩 저장
 clusters = defaultdict(list)
 for text, cluster_id in zip(dialogues, pred_clusters):
     clusters[cluster_id].append(text)
@@ -79,5 +79,5 @@ for cid, lines in clusters.items():
     with open(path, 'w', encoding='utf-8') as f:
         for line in lines[:30]:
             f.write(line + '\n')
-print("✅ 클러스터별 대표 문장 저장 완료")
+print("클러스터별 대표 문장 저장 완료")
 
