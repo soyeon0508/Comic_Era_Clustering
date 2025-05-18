@@ -6,7 +6,7 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
 import shutil
 
-SAVE_DIR = "/home/ubuntu/comic_translation/result_v4"
+SAVE_DIR = "/home/ubuntu/comic_translation/result_v3"
 PARTIAL_LABEL_PATH = "image_label_list_partial.txt"
 
 # 1. Load embeddings
