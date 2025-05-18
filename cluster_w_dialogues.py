@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from collections import defaultdict
 
 # 결과 저장 폴더
-RESULT_DIR = "/home/ubuntu/comic_translation/result_v2"
+RESULT_DIR = "/home/ubuntu/comic_translation/result_v1"
 os.makedirs(RESULT_DIR, exist_ok=True)
 
 # 데이터 로드
