@@ -1,0 +1,91 @@
+{
+    "new_features": [
+        {
+            "feature1": "feat_2",
+            "feature2": "feat_103",
+            "operation": "ratio",
+            "score": 1.0623995777
+        },
+        {
+            "feature1": "feat_26",
+            "feature2": "feat_31",
+            "operation": "ratio",
+            "score": 1.0654753102
+        },
+        {
+            "feature1": "feat_94",
+            "feature2": "feat_17",
+            "operation": "multiply",
+            "score": 1.0655298595
+        },
+        {
+            "feature1": "feat_81",
+            "feature2": "feat_47",
+            "operation": "multiply",
+            "score": 1.067063507
+        },
+        {
+            "feature1": "feat_47",
+            "feature2": "feat_3",
+            "operation": "sum",
+            "score": 1.0687784431
+        },
+        {
+            "feature1": "feat_81",
+            "feature2": "feat_38",
+            "operation": "multiply",
+            "score": 1.0704083839
+        },
+        {
+            "feature1": "feat_33",
+            "feature2": "feat_88",
+            "operation": "ratio",
+            "score": 1.0722246225
+        },
+        {
+            "feature1": "feat_120",
+            "feature2": "feat_3",
+            "operation": "sum",
+            "score": 1.0724799524
+        },
+        {
+            "feature1": "feat_119",
+            "feature2": "feat_13",
+            "operation": "sum",
+            "score": 1.0729445428
+        },
+        {
+            "feature1": "feat_78",
+            "feature2": "feat_80",
+            "operation": "diff",
+            "score": 1.0733004627
+        },
+        {
+            "feature1": "feat_50",
+            "feature2": "feat_78",
+            "operation": "diff",
+            "score": 1.0734522573
+        },
+        {
+            "feature1": "feat_110",
+            "feature2": "feat_28",
+            "operation": "multiply",
+            "score": 1.0735746176
+        }
+    ],
+    "new_columns": [
+        "feat_2_ratio_feat_103",
+        "feat_26_ratio_feat_31",
+        "feat_94_multiply_feat_17",
+        "feat_81_multiply_feat_47",
+        "feat_47_sum_feat_3",
+        "feat_81_multiply_feat_38",
+        "feat_33_ratio_feat_88",
+        "feat_120_sum_feat_3",
+        "feat_119_sum_feat_13",
+        "feat_78_diff_feat_80",
+        "feat_50_diff_feat_78",
+        "feat_110_multiply_feat_28"
+    ],
+    "ml_task": "multiclass_classification"
+}

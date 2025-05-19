@@ -4,17 +4,29 @@
     "optimize_metric": "logloss",
     "selected_models": [
         {
-            "model": "1_Default_LightGBM",
+            "model": "18_CatBoost",
+            "repeat": 1.0
+        },
+        {
+            "model": "20_Xgboost",
             "repeat": 1.0
         },
         {
             "model": "3_Default_CatBoost",
             "repeat": 1.0
+        },
+        {
+            "model": "3_Default_CatBoost_GoldenFeatures",
+            "repeat": 1.0
+        },
+        {
+            "model": "5_Xgboost",
+            "repeat": 1.0
         }
     ],
     "predictions_fname": "Ensemble/predictions_ensemble.csv",
     "metric_name": "logloss",
-    "final_loss": 0.9076440383968302,
-    "train_time": 0.14705729484558105,
+    "final_loss": 0.9044245145688644,
+    "train_time": 0.46591997146606445,
     "is_stacked": false
 }

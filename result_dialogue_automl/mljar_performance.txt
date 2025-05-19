@@ -1,4 +1,0 @@
-Accuracy: 0.8895
-F1 Score: 0.8889
-ARI: 0.6922
-NMI: 0.6115
